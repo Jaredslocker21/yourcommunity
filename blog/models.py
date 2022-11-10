@@ -14,6 +14,7 @@ class Member(models.Model):
         User, on_delete=models.CASCADE, related_name="member_posts"
     )
     featured_image = CloudinaryField('image', default='placeholder')
+    user_email = models.EmailField(max_length=70, blank=True, unique=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
