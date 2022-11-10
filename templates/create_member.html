@@ -1,0 +1,30 @@
+{% block content %}
+    {% if user.is_authenticated %}
+    <div class="container text-light">
+        <div class="row">
+            <div class="col mt-3 mb-5">
+                <h1 class="text-center green-text">Create a Member Page</h1>
+                <form action="." method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
+                    <div class="row">
+                        <div class="col">
+                            {{ recipe_form | crispy | safe }}
+                            {% csrf_token %}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-signup btn-lg green-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3 mb-5 text-light text-center">
+                <h1 class="green-text mb-5">I'm sorry, you're not logged in!</h1>
+                <p>You will need to <a class="green-text" href="{% url 'account_login' %}">log in</a> or <a
+                        class="green-text" href="{% url 'account_signup' %}">register</a> an account to share a recipe.</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock %}
