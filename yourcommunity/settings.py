@@ -30,11 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 
 ALLOWED_HOSTS = ["yourcommunityblog.herokuapp.com", "localhost"]
 
-
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'allauth',
+    'allauth.account',
     'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
