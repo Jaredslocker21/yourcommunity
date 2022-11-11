@@ -86,9 +86,16 @@ body {
     z-index: 100;
 }
 
+p {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #f4f7fa;
 }
 
 .post-link:hover,
