@@ -35,21 +35,20 @@
 
                     <div class="col-1">
                         <strong>
-                            {% if user is is_authenticated %}
+                            {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'member_like' member.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogmember_id" value="{{member.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogmember_id" value="{{member.slug}}" class="btn-like"><i
-                                    class="far fa-heart"></i>
-                                </button>
+                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                        <span class="text-secondary"><i class="far fa-heart"></i> {{ member.number_of_likes }} </span>
+                        <!-- The number of likes goes before the closing strong tag -->
+                        <span class="text-secondary">{{ member.number_of_likes }} </span>
                         </strong>
                     </div>
                     <div class="col-1">

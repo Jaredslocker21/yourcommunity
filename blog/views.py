@@ -53,7 +53,7 @@ class MemberDetail(View):
             comment.post = member
             comment.save()
         else:
-            comment_form = CommentForm()  
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -68,12 +68,16 @@ class MemberDetail(View):
         )
 
 
-class MemberLike():
-    """ Create a view of likes for members"""
-    def member(self, request, slug):
+class MemberLike(View):
+    """
+    Likes on a Member
+    """
+    def post(self, request, slug, *args, **kwargs):
+        """
+        Submits to view
+        """
         member = get_object_or_404(Member, slug=slug)
-
-        if member.likes.filter(request.user.id).exists():
+        if member.likes.filter(id=request.user.id).exists():
             member.likes.remove(request.user)
         else:
             member.likes.add(request.user)
