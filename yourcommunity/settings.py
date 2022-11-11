@@ -30,6 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 ALLOWED_HOSTS = ["yourcommunityblog.herokuapp.com", "localhost"]
 
