@@ -9,7 +9,7 @@
                 <form action="?action=save" method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col">
-                            {{ recipe_form | crispy | safe }}
+                            {{ member_form | crispy | safe }}
                             {% csrf_token %}
                         </div>
                     </div>
