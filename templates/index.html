@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block content %}
 
@@ -23,7 +24,7 @@
                                     <p class="author">Author: {{ member.author }}</p>
                                 </div>
                             </div>
-                            <a href="#" class="post-link">
+                            <a href="{% url 'member_detail' member.slug %}" class="post-link">
                                 <h2 class="card-title">{{ member.title }}</h2>
                                 <p class="card-text">{{member.description}}</p>
                             </a>

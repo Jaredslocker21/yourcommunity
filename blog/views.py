@@ -19,7 +19,7 @@ class MemberDetail(View):
         member = get_object_or_404(queryset, slug=slug)
         comments = member.comments.filter(approved=True).order_by('created_on')
         liked = False
-        if member.likes(id=self.request.user.id).exists():
+        if member.likes.filter(id=self.request.user.id).exists():
             liked = True
 
         return render(
