@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.http import HttpResponseRedirect
 from .models import Member
 from .forms import CommentForm
 # Create your views here.
@@ -65,3 +66,16 @@ class MemberDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+class MemberLike():
+    """ Create a view of likes for members"""
+    def member(self, request, slug):
+        member = get_object_or_404(Member, slug=slug)
+
+        if member.likes.filter(request.user.id).exists():
+            member.likes.remove(request.user)
+        else:
+            member.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('member_detail', args=[slug]))
