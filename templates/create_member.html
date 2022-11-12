@@ -7,7 +7,7 @@
                 <form action="." method="post" style="margin-top: 1.3em;" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col">
-                            {{ recipe_form | crispy | safe }}
+                            {{ member_form | crispy | safe }}
                             {% csrf_token %}
                         </div>
                     </div>
@@ -22,7 +22,7 @@
             <div class="col mt-3 mb-5 text-light text-center">
                 <h1 class="green-text mb-5">I'm sorry, you're not logged in!</h1>
                 <p>You will need to <a class="green-text" href="{% url 'account_login' %}">log in</a> or <a
-                        class="green-text" href="{% url 'account_signup' %}">register</a> an account to share a recipe.</p>
+                        class="green-text" href="{% url 'account_signup' %}">register</a></p>
             </div>
         </div>
     </div>

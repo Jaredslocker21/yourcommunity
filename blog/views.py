@@ -13,6 +13,28 @@ def about(request):
     return render(request, "about.html")
 
 
+def create_member(request):
+    """
+    renders share a member page
+    """
+    member_form = Memberform(request.POST or None, request.FILES or None)
+    context = {
+        'member_form': member_form,
+    }
+
+    if request.method == "POST":
+        member_form = MemberForm(request.POST, request.FILES)
+        if member_form.is_valid():
+            member_form = member_form.save(commit=False)
+            member_form.author = request.user
+            member_form.status = 1
+            member_form.save()
+            return redirect('home')
+    else:
+        member_form = MemberForm()
+    return render(request, "create_member.html", context)    
+
+
 class MemberList(generic.ListView):
     """ View code for Member Home page and site pagination """
     model = Member
