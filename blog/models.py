@@ -40,7 +40,10 @@ class Member(models.Model):
         User, related_name='member_likes', blank=True)
 
     class Meta:
-        ordering = ["-created_on"]
+        """
+        Dedending order the member posts in created order,
+        """
+        ordering = ['-created_on']
 
     def __str__(self):
         return self.title
@@ -48,11 +51,13 @@ class Member(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-    class Meta:
+    def save(self, *args, **kwargs):
         """
-        Dedending order the member posts in created order,
+        Saves form information
         """
-        ordering = ['-created_on']
+        if not self.slug:
+            self.slug = unique_slugify(self, slugify(self.title))
+        super().save(*args, **kwargs)
 
     def __str__(self):
         """
