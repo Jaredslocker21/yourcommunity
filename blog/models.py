@@ -49,6 +49,24 @@ class Member(models.Model):
         Return total amount of likes on a member
         """
         return self.likes.count()
+        
+    def member_to_edit(self, request, slug):
+        """
+        Allows only the author to edit Member.
+        """
+        if self.author:
+            return True
+        else:
+            return False
+
+    def member_to_delete(self, request, slug):
+        """
+        Allows only the author to delete Member.
+        """
+        if self.author:
+            return True
+        else:
+            return False
 
 
 class Comment(models.Model):
