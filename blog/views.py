@@ -6,6 +6,13 @@ from .forms import CommentForm
 # Create your views here.
 
 
+def about(request):
+    """
+    renders about page
+    """
+    return render(request, "about.html")
+
+
 class MemberList(generic.ListView):
     """ View code for Member Home page and site pagination """
     model = Member
