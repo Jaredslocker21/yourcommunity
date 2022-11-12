@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Member
-from .forms import CommentForm
+from .forms import CommentForm, MemberForm
 # Create your views here.
 
 
@@ -15,9 +15,9 @@ def about(request):
 
 def create_member(request):
     """
-    renders share a member page
+    renders create a member page
     """
-    member_form = Memberform(request.POST or None, request.FILES or None)
+    member_form = MemberForm(request.POST or None, request.FILES or None)
     context = {
         'member_form': member_form,
     }
