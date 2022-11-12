@@ -1,10 +1,26 @@
+import string
 from django.db import models
+from django.template.defaultfilters import slugify
+from django.utils.crypto import get_random_string
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
+
+# another student helped me on this fx mentioned in read me
+
+
+def unique_slugify(instance, slug):
+    """
+    creates a unique slug
+    """
+    model = Member
+    unique_slug = slug
+    while model.objects.filter(slug=unique_slug).exists():
+        unique_slug = slug + "-" + get_random_string(length=4)
+    return unique_slug
 
 
 class Member(models.Model):
