@@ -1,4 +1,9 @@
+{% extends 'base.html' %}
+{% load cloudinary %}
+{% load crispy_forms_tags %}
+{% load static %}
 {% block content %}
+
     {% if user.is_authenticated %}
     <div class="container text-light">
         <div class="row">

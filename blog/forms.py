@@ -17,12 +17,12 @@ class MemberForm(forms.ModelForm):
             'author',
             'user_email',
             'featured_image',
-            'blurb',
             'description',
+            'blurb',
+            
         ]
         widgets = {
-            'blurb': SummernoteInplaceWidget(),
-            'description': SummernoteInplaceWidget()
+            'Member': SummernoteInplaceWidget(),
         }
 
     def __init__(self, *args, **kwargs):
