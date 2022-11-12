@@ -6,5 +6,4 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('<slug:slug>/', views.MemberDetail.as_view(), name='member_detail'),
     path('like/<slug:slug>', views.MemberLike.as_view(), name='member_like'),
-    
 ]
