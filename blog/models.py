@@ -9,12 +9,10 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 # Create your models here.
 
-# another student helped me on this fx mentioned in read me
-
 
 def unique_slugify(instance, slug):
     """
-    creates a unique slug
+    creates a unique slug. 
     """
     model = Member
     unique_slug = slug
@@ -24,6 +22,7 @@ def unique_slugify(instance, slug):
 
 
 class Member(models.Model):
+    """ Member Model """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
