@@ -32,7 +32,16 @@ def create_member(request):
             return redirect('member_detail')
     else:
         member_form = MemberForm()
-    return render(request, "create_member.html", context)    
+    return render(request, "create_member.html", context)
+
+
+def delete_member(request, slug):
+    """
+    Member delete view
+    """
+    member = Member.objects.get(slug=slug)
+    member.delete()
+    return redirect('home')
 
 
 class MemberList(generic.ListView):
