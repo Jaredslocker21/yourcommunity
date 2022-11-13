@@ -97,6 +97,28 @@ class MemberDetail(View):
         )
 
 
+def edit_member(request, slug):
+    """
+    Member Edit view
+    """
+    member = get_object_or_404(Member, slug=slug)
+    member_form = MemberForm(request.POST or None, instance=member)
+    context = {
+        "member_form": member_form,
+        "member": member
+    }
+    if request.method == "POST":
+        member_form = MemberForm(request.POST, request.FILES, instance=member)
+        if member_form.is_valid():
+            member = member_form.save(commit=False)
+            member.author = request.user
+            member.save()
+            return redirect('home')
+    else:
+        member_form = MemberForm(instance=member)
+    return render(request, "edit_member.html", context)        
+
+
 class MemberLike(View):
     """
     Likes on a Member
