@@ -29,7 +29,7 @@ def create_member(request):
             member_form.author = request.user
             member_form.status = 1
             member_form.save()
-            return redirect('member_detail')
+            return redirect('home')
     else:
         member_form = MemberForm()
     return render(request, "create_member.html", context)
