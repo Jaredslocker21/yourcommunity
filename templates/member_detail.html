@@ -114,6 +114,8 @@
                 <a href="{% url 'edit_member' member.slug %}" class="edit"><button
                         class="btn btn-signup btn-md green-btn" value="{{ member.slug }}"
                         type="button">Edit</button></a>
+                <a href="{% url 'delete_member' member.slug %}" class="delete"><button
+                    class="btn btn-danger btn-md mx-4" value="{{ member.slug }}" type="button">Delete</button></a>
                 {% endif %}
             </div>
         </div>
