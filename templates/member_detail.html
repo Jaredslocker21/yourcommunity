@@ -109,6 +109,13 @@
                 {% endif %}
                 {% endif %}
             </div>
+            <div class="col mt-2 mb-3">
+                {% if user.id == member.author.id %}
+                <a href="{% url 'edit_member' member.slug %}" class="edit"><button
+                        class="btn btn-signup btn-md green-btn" value="{{ member.slug }}"
+                        type="button">Edit</button></a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
