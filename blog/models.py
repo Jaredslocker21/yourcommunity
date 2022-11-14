@@ -38,8 +38,7 @@ class Member(models.Model):
     likes = models.ManyToManyField(
         User, related_name='member_likes', blank=True)
     approved = models.BooleanField(default=False) 
-    
-   
+
     class Meta:
         """
         Dedending order the member posts in created order,
@@ -71,7 +70,7 @@ class Member(models.Model):
         Return total amount of likes on a member
         """
         return self.likes.count()
-        
+
     def member_to_edit(self, request, slug):
         """
         Allows only the author to edit Member.
