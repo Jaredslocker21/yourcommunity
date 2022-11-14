@@ -47,7 +47,7 @@ def delete_member(request, slug):
 class MemberList(generic.ListView):
     """ View code for Member Home page and site pagination """
     model = Member
-    queryset = Member.objects.filter(status=1).order_by('-created_on')
+    queryset = Member.objects.filter(status=1).filter(approved=True).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 8
 
@@ -55,7 +55,7 @@ class MemberList(generic.ListView):
 class MemberDetail(View):
     """ View code for Member Page """
     def get(self, request, slug, *args, **kwargs):
-        queryset = Member.objects.filter(status=1)
+        queryset = Member.objects.filter(approved=True).filter(status=1)
         member = get_object_or_404(queryset, slug=slug)
         comments = member.comments.filter(approved=True).order_by('created_on')
         liked = False

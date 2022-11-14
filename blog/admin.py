@@ -15,6 +15,10 @@ class MemberAdmin(SummernoteModelAdmin):
     summernote_fields = ('blurb',)
     actions = ['approve_member']
 
+    def approve_member(self, request, queryset):
+        """ Comments to be approved """
+        queryset.update(approved=True)
+
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
