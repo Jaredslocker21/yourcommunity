@@ -37,7 +37,8 @@ class Member(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='member_likes', blank=True)
-
+    
+   
     class Meta:
         """
         Dedending order the member posts in created order,

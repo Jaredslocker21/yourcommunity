@@ -13,6 +13,7 @@ class MemberAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status', 'created_on')
     summernote_fields = ('blurb',)
+    actions = ['approve_member']
 
 
 @admin.register(Comment)
