@@ -1,3 +1,4 @@
+/* Main views */
 body {
     background-color: #ffffff;
 }
@@ -39,7 +40,7 @@ body {
     margin: 4px;
     
 }
-
+/* Member page style */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
