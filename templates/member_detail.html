@@ -7,17 +7,17 @@
             {% if "placeholder" in member.featured_image.url %}
             <img src="/static/media/site_images/community.jpeg" alt="community image" id="member-image">
             {% else %}
-            <img id="member-image" src="{{ member.featured_image.url }}" alt="{{ member.title }}">
+            <img id="member-image" src="{{ member.featured_image.url }}" alt="member title">
             {% endif %}
         </div>
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-start  mx-auto">
             <h1 class="green-text">{{ member.title }}</h1>
 
-            <p><small>Created by: <span class="green-text">{{ member.author }}</span> on {{ member.created_on }}</small>
+            <p><small>Created by: <span class="black-text">{{ member.author }}</span> on {{ member.created_on }}</small>
             </p>
-        </div>    
-    </div>        
-</div>  
+        </div>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -26,8 +26,8 @@
                 <!-- The Member content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text "></p>
-                    {{ member.blurb | safe }}
-                    {{ member.description | safe }}
+                {{ member.blurb | safe }}
+                {{ member.description | safe }}
                 <div class="row">
 
                     <div class="col-1">
@@ -36,16 +36,18 @@
                             <form class="d-inline" action="{% url 'member_like' member.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{member.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                        <!-- The number of likes goes before the closing strong tag -->
-                        <span class="text-secondary">{{ member.number_of_likes }} </span>
+                            <!-- The number of likes goes before the closing strong tag -->
+                            <span class="text-secondary">{{ member.number_of_likes }} </span>
                         </strong>
                     </div>
                     <div class="col-1">
@@ -112,7 +114,7 @@
                         class="btn btn-signup btn-md green-btn" value="{{ member.slug }}"
                         type="button">Edit</button></a>
                 <a href="{% url 'delete_member' member.slug %}" class="delete"><button
-                    class="btn btn-danger btn-md mx-4" value="{{ member.slug }}" type="button">Delete</button></a>
+                        class="btn btn-danger btn-md mx-4" value="{{ member.slug }}" type="button">Delete</button></a>
                 {% endif %}
             </div>
         </div>
