@@ -86,8 +86,7 @@ h3 {
     color: #f4f7fa;
 }
 
-.post-link:hover,
-.page-link {
+.post-link:hover {
     color: #E84610;
 }
 
