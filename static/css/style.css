@@ -10,7 +10,7 @@ body {
     border: none;
     background-color: transparent;
 }
-/* Images */
+/* Images style */
 
 .header-image {
     width: 100%;
@@ -73,7 +73,7 @@ body {
     transform: skew(15deg);
     z-index: 100;
 }
-
+/* text style*/
 p {
     color: rgb(0, 0, 0);
 }
@@ -100,6 +100,8 @@ h3 {
     margin-left: 5%;
     color: lightgray;
 }
+
+/* Button Styles */
 
 .btn-signup {
     background-color: #23BBBB;

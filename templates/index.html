@@ -3,6 +3,29 @@
 
 {% block content %}
 
+<div class="container">
+    <div class="row">
+        <div class="col offest-2">
+            <!-- User welcome message -->
+            {% if user.is_authenticated %}
+            <h1 class="text-center text-light mt-3">
+                Welcome to Your Community, <span class="black-text">{{ user.username }}</span>!
+            </h1>
+
+            <hr class="text-light">
+
+            {% else %}
+            <h1 class="text-center padding mb-5 mt-5">Welcome Community Member!</h1>
+            <p class="text-center mb-5">To create a community member page, leave a comment or like a member. Please <a class="link blue-text" href="{% url 'account_login' %}">log
+                    in</a>. If have not created an account
+                yet, then <a class="link blue-text" href="{% url 'account_signup' %}">Register your account</a>.
+            </p>
+            <hr class="mt-3 mb-5 text-light">
+            {% endif %}
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid">
     <div class="row">
 
@@ -28,7 +51,7 @@
                             </div>
                             <a href="{% url 'member_detail' member.slug %}" class="post-link">
                                 <p class="card-title">Members Title: {{ member.title }}</p>
-                                <p class="card-text">{{member.description}}</p>
+                                <p class="card-text"> Member Descriptions:<br>{{member.description}}</p>
                             </a>
                             <hr />
                             <p class="card-text text-primary h6">{{ member.created_on}} <i class="far fa-heart"></i>
