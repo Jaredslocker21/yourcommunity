@@ -1,26 +1,23 @@
 {% extends 'base.html' %} {% block content %} {% load static %}
 {% load crispy_forms_tags %}
 
-<div class="masthead">
-    <div class="container">
-        <div class="row g-0">
-            <div class="col-md-6 masthead-text">
-                <!-- Member title goes in these h1 tags -->
-                <h1 class="member-title">{{ member.title }}</h1>
-                <!-- Member author goes before the | the member's created date goes after -->
-                <p class="member-subtitle">{{ member.author }} | {{ member.created_on }}</p>
-            </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
-                <!-- The featured image URL goes in the src attribute -->
-                {% if "placeholder" in member.featured_image.url %}
-                <img src="/static/media/site_images/community.jpeg" width="100%">
-                {% else %}
-                <img src="{{ member.featured_image.url }}" width="100%">
-                {% endif %}
-            </div>
+<div class="container justify-content-center mt-3 mb-3">
+    <div class="row text-center">
+        <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
+            {% if "placeholder" in member.featured_image.url %}
+            <img src="/static/media/site_images/community.jpeg" alt="community image" id="member-image">
+            {% else %}
+            <img id="member-image" src="{{ member.featured_image.url }}" alt="{{ member.title }}">
+            {% endif %}
         </div>
-    </div>
-</div>
+        <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-start  mx-auto">
+            <h1 class="green-text">{{ member.title }}</h1>
+
+            <p><small>Created by: <span class="green-text">{{ member.author }}</span> on {{ member.created_on }}</small>
+            </p>
+        </div>    
+    </div>        
+</div>  
 
 <div class="container">
     <div class="row">
