@@ -9,14 +9,6 @@ body {
     color: #4A4A4F;
 }
 
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
 .light-bg {
     background-color: #fff;
 }
@@ -33,6 +25,14 @@ body {
     border: none;
     background-color: transparent;
 }
+/* Image */
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    min-height: 200px;
+}
 
 .image-container {
     position: relative;
@@ -46,7 +46,7 @@ body {
 .author {
     color: white;
     margin: 4px;
-    text-transform: uppercase;
+    
 }
 
 .masthead {
