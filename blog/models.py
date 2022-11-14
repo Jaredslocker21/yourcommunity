@@ -12,8 +12,8 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 def unique_slugify(instance, slug):
     """
-    creates a unique slug. 
-    """
+    creates a unique slug.
+        """
     model = Member
     unique_slug = slug
     while model.objects.filter(slug=unique_slug).exists():
@@ -37,7 +37,7 @@ class Member(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='member_likes', blank=True)
-    approved = models.BooleanField(default=False) 
+    approved = models.BooleanField(default=False)
 
     class Meta:
         """
@@ -97,7 +97,7 @@ class Comment(models.Model):
     email = models.TextField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)      
+    approved = models.BooleanField(default=False)
 
     class Meta:
         ordering = ['created_on']

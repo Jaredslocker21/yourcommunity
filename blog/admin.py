@@ -16,7 +16,7 @@ class MemberAdmin(SummernoteModelAdmin):
     actions = ['approve_member']
 
     def approve_member(self, request, queryset):
-        """ Comments to be approved """
+        """ Member to be approved """
         queryset.update(approved=True)
 
 
