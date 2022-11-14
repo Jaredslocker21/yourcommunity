@@ -1,31 +1,22 @@
 body {
-    background-color: #3e4147;
-}
-
-.brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
+    background-color: #ffffff;
 }
 
 .main-bg {
-    background-color: #353942;
+    background-color: #ffffff;
 }
 
 .card {
     border: none;
     background-color: transparent;
 }
-/* Image */
+/* Images */
+
+.header-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
 
 .card-img-top {
     width: 100%;
@@ -44,7 +35,7 @@ body {
 }
 
 .author {
-    color: white;
+    color: rgb(17, 17, 17);
     margin: 4px;
     
 }
@@ -60,7 +51,7 @@ body {
 
 .masthead-text {
     background-color: #445261;
-    color: white;
+    color: rgb(15, 15, 15);
     position: relative;
 }
 
@@ -84,11 +75,11 @@ body {
 }
 
 p {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 h3 {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 .post-link {
     text-decoration: none;
