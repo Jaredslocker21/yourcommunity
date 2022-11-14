@@ -21,11 +21,11 @@
                                 <img class="card-img-top" src=" {{ member.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
-                                    <p class="author">Author: {{ member.author }}</p>
+                                    <p class="author">Member: {{ member.author }}</p>
                                 </div>
                             </div>
                             <a href="{% url 'member_detail' member.slug %}" class="post-link">
-                                <h2 class="card-title">{{ member.title }}</h2>
+                                <p class="card-title">Members Title: {{ member.title }}</p>
                                 <p class="card-text">{{member.description}}</p>
                             </a>
                             <hr />
