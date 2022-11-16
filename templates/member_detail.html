@@ -11,10 +11,10 @@
             {% endif %}
         </div>
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-start  mx-auto">
-            <h1 class="green-text">{{ member.title }}</h1>
-
-            <p><small>Created by: <span class="black-text">{{ member.description | safe }}<br>{{ member.author }}</span> on {{ member.created_on }}</small>
-            </p>
+            <h2 class="member-title">Members Role: {{ member.title }}</h2>
+            <h3 class="member-author">Members Name:  {{ member.author }}</h3>
+            <p><span class="black-text">Member Description: {{ member.description | safe }}<br></span></p>                 
+            <small>Created on: {{ member.created_on }}</small>            
         </div>
     </div>
 </div>

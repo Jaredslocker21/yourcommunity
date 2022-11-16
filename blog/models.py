@@ -23,7 +23,7 @@ def unique_slugify(instance, slug):
 
 class Member(models.Model):
     """ Member Model """
-    title = models.CharField(max_length=200, unique=True)
+    role = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="member_posts"

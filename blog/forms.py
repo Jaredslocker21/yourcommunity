@@ -13,7 +13,7 @@ class MemberForm(forms.ModelForm):
         """
         model = Member
         fields = [
-            'title',
+            'role',
             'author',
             'user_email',
             'featured_image',
