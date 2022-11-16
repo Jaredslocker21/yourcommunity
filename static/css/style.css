@@ -113,3 +113,8 @@ h3 {
     background: transparent;
     border: none;
 }
+
+.alert {
+    position: absolute;
+    z-index: 999;
+}

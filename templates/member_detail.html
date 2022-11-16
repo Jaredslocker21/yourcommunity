@@ -13,7 +13,7 @@
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-start  mx-auto">
             <h1 class="green-text">{{ member.title }}</h1>
 
-            <p><small>Created by: <span class="black-text">{{ member.author }}</span> on {{ member.created_on }}</small>
+            <p><small>Created by: <span class="black-text">{{ member.description | safe }}<br>{{ member.author }}</span> on {{ member.created_on }}</small>
             </p>
         </div>
     </div>
@@ -27,7 +27,6 @@
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text "></p>
                 {{ member.blurb | safe }}
-                {{ member.description | safe }}
                 <div class="row">
 
                     <div class="col-1">
