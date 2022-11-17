@@ -47,8 +47,8 @@
                                 {% endif %}
                             </div>
                             <a href="{% url 'member_detail' member.slug %}" class="post-link">
-                                <p>Member: {{ member.author }}</p>
-                                <p class="card-role">Your Role: {{ member.role }}</p>
+                                <p class="h6"> Member: {{ member.author }}</p>
+                                <p class="card-role h6">Your Role: {{ member.role }}</p>
                             </a>
                             <hr />
                             <p class="card-text text-primary h6">{{ member.created_on}} <i class="far fa-heart"></i>
