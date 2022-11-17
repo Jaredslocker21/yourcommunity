@@ -45,11 +45,9 @@
                                     <img class="card-img-top" src=" {{ member.featured_image.url }}">
                                 </a>
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p>Member: {{ member.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'member_detail' member.slug %}" class="post-link">
+                                <p>Member: {{ member.author }}</p>
                                 <p class="card-role">Your Role: {{ member.role }}</p>
                             </a>
                             <hr />

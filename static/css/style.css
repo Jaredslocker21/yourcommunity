@@ -11,6 +11,7 @@ body {
     border: none;
     background-color: transparent;
 }
+
 /* Images style */
 
 .header-image {
@@ -37,11 +38,6 @@ body {
     position: relative;
 }
 
-.image-flash {
-    position: relative;
-    
-}
-
 .author {
     color: rgb(17, 17, 17);
     margin: 4px;
@@ -65,11 +61,6 @@ h3 {
 
 .post-link:hover {
     color: #E84610;
-}
-
-.post-title {
-    margin-top: 20%;
-    margin-left: 5%;
 }
 
 .post-subtitle {
@@ -113,8 +104,10 @@ h3 {
     background: transparent;
     border: none;
 }
-
-.alert {
+/* alert messages */
+#msg {
     position: absolute;
     z-index: 999;
+    background: #dd39dd;
+    left: 0px;
 }
