@@ -5,7 +5,7 @@
     <div class="row text-center">
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
             {% if "placeholder" in member.featured_image.url %}
-            <img src="/static/media/site_images/defaultimage .jpeg" alt="community image" id="member-image">
+            <img src="{% static 'media/site_images/defaultimage.jpeg' %}" alt="community image" id="member-image">
             {% else %}
             <img id="member-image" src="{{ member.featured_image.url }}" alt="member ">
             {% endif %}
