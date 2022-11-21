@@ -62,7 +62,7 @@ class Member(models.Model):
         """
         Returns a string showing the title.
         """
-        return str(self.title)
+        return str(self.author)
 
     def number_of_likes(self):
         """
