@@ -14,7 +14,6 @@ class MemberForm(forms.ModelForm):
         model = Member
         fields = [
             'role',
-            'author',
             'user_email',
             'featured_image',
             'description',

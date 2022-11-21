@@ -165,3 +165,40 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SUMMERNOTE_CONFIG = {
+    # You can set it to `False` to use SummernoteInplaceWidget by default
+    # - no iframe mode. In this case, you have to load Bootstrap/jQuery sources
+    # and dependencies manually. Use this when you're already using
+    # Bootstrap/jQuery based themes.
+    'iframe': False,
+
+    # You can put custom Summernote settings
+    'summernote': {
+
+        # Change editor size
+        'width': '100%',
+        'height': '12vmin',
+
+        # Use proper language setting automatically (default)
+        'lang': None,
+
+        # Toolbar customization
+        # https://summernote.org/deep-dive/#custom-toolbar-popover
+        'toolbar': [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['fontname', ['fontname']],
+            ['color', ['antiquewhite']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']],
+        ],
+    },
+
+    # Lazy initialization
+    # If you want to initialize summernote at the bottom of page, set this as
+    # True and call `initSummernote()` on your page.
+    'lazy': True,
+}
