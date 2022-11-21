@@ -55,7 +55,7 @@ class Member(models.Model):
         Saves form information
         """
         if not self.slug:
-            self.slug = unique_slugify(self, slugify(self.title))
+            self.slug = unique_slugify(self, slugify(self.author))
         super().save(*args, **kwargs)
 
     def __str__(self):

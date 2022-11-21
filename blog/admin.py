@@ -9,7 +9,8 @@ class MemberAdmin(SummernoteModelAdmin):
     """
     This class displays a summernote model and  a nice list filter
     """
-    list_display = ('role', 'slug', 'status', 'created_on', 'user_email')
+    list_display = ('author', 'slug', 'status', 'created_on', 'user_email',
+                    'approved')
     prepopulated_fields = {'slug': ('role',)}
     list_filter = ('status', 'created_on')
     summernote_fields = ('description',)
