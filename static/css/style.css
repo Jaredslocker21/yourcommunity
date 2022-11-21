@@ -29,7 +29,7 @@ body {
 .card-img-top {
     width: 100%;
     height: 20vw;
-    object-fit: contain;
+    object-fit: cover;
     object-position: left;
     min-height: 200px;
 }
