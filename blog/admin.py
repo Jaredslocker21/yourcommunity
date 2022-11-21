@@ -12,7 +12,7 @@ class MemberAdmin(SummernoteModelAdmin):
     list_display = ('role', 'slug', 'status', 'created_on', 'user_email')
     prepopulated_fields = {'slug': ('role',)}
     list_filter = ('status', 'created_on')
-    summernote_fields = ('blurb',)
+    summernote_fields = ('description',)
     actions = ['approve_member']
 
     def approve_member(self, request, queryset):

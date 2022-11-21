@@ -32,7 +32,6 @@ class Member(models.Model):
     user_email = models.EmailField(max_length=70, blank=True, unique=True)
     updated_on = models.DateTimeField(auto_now=True)
     description = models.TextField(blank=True)
-    blurb = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
