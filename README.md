@@ -446,8 +446,9 @@ The main color schemes for the website is a clean white background (#ffffff). Bl
 
 The Website logo was was taken from Adobe Stock and a license wsa purchased for up too 500,000 views.
 
-The hero image was taken from Adobe Stock and a license wsa purchased for up too 500,000 views.
+The hero image was taken from Adobe Stock and a license was purchased for up too 500,000 views.
 
+Default Member image taken from Adobe Stock and a license was purchased for up too 500,000 views.
 
 ## Technolgies
 

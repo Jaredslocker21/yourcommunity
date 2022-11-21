@@ -8,14 +8,14 @@
         <div class="col offest-2">
             <!-- User welcome message -->
             {% if user.is_authenticated %}
-            <h1 class="text-center mt-3">
+            <h1 class="text-center mt-2">
                 Welcome to Your Community, <span class="black-text">{{ user.username }}</span>!
             </h1>
             <h3 class="text-center"> Create your member page, edit, comment and save.</h3>
             <hr class="text-dark">
 
             {% else %}
-            <h1 class="text-center padding mb-5 mt-5">Welcome Community Member!</h1>
+            <h1 class="text-center padding mb-2 mt-3">Welcome Community Member!</h1>
             <h3 class="text-center mb-5">Create your community member page, leave a comment or like a member.
                 <a class="link blue-text" href="{% url 'account_signup' %}"> Please Register.<br>
                     </a> If you have an account
