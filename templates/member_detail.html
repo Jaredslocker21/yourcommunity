@@ -5,7 +5,7 @@
     <div class="row text-center">
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-center">
             {% if "placeholder" in member.featured_image.url %}
-            <img src="/static/media/site_images/community.jpeg" alt="community image" id="member-image">
+            <img src="/static/media/site_images/defaultimage .jpeg" alt="community image" id="member-image">
             {% else %}
             <img id="member-image" src="{{ member.featured_image.url }}" alt="member ">
             {% endif %}
@@ -13,7 +13,7 @@
         <div class="col-12 col-md-12 col-lg-6 col-xl-6 text-start  mx-auto">
             <h2 class="member-role">Your Role: {{ member.role }}</h2>
             <h3 class="member-author">Your Name:  {{ member.author }}</h3>
-            <p><span class="black-text">Your Description: {{ member.description | safe }}<br></span></p>                 
+            <p><span class="black-text">About Me: {{ member.description | safe }}<br></span></p>                 
             <small>Created on: {{ member.created_on }}</small>            
         </div>
     </div>
@@ -25,7 +25,7 @@
             <div class="card-body">
                 <!-- The Member content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
-                <p class="card-text "></p>
+                <p class="card-text ">Member Blurb:</p>
                 {{ member.blurb | safe }}
                 <div class="row">
 
