@@ -11,19 +11,19 @@
             <h1 class="text-center mt-2">
                 Welcome to Your Community, <span class="black-text">{{ user.username }}</span>!
             </h1>
-            <h3 class="text-center"> Create your member page, edit, comment and save.</h3>
+            <h4 class="text-center"> Create your member page, edit, comment and save.</h4>
             <hr class="text-dark">
 
             {% else %}
             <h1 class="text-center padding mb-2 mt-3">Welcome Community Member!</h1>
-            <h3 class="text-center mb-3">Tell your Community About Yourself! <br>
+            <h5 class="text-center mb-3">Tell your Community About Yourself! <br>
                 Create your community member page, leave a comment or like a member.
                 <a class="link blue-text" href="{% url 'account_signup' %}"> Please Register.<br>
                     </a> If you have an account, 
                  <a class="link blue-text" href="{% url 'account_login' %}"> Log In</a>.
                     Or want to read more about us. 
                  <a class="link blue-text" href="{% url 'about' %}"> About</a>.
-                </h3>
+                </h5>
             <hr class="mt-2 mb-2 text-dark">
             {% endif %}
         </div>
