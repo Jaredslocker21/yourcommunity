@@ -204,7 +204,7 @@ This will immediately make it evident to the user, what the purpose of the websi
 
 The navigation menu is displayed on all pages and drops down into a hamburger menu on smaller devices. This will allow users to view the site from any device and not take up too much space on mobile devices.
 
-![Navbar](docs/readme_images/navbar.PNG)
+![Navbar]()
 
 ![Hero Image]()
 
@@ -257,11 +257,11 @@ On the manage members page a button was added to allow staff members to edit a m
 
 Implementation:
 
-**Toasts**
+**Alert Message**
 
-Custom toasts were added on successful creation and deletion of members which display success messages to the user to enable them to see that the action completed successfully.
+Generic Alert messages were used to inform members of their actions
 
-![Member Toasts](d)
+![Alert Messages]()
 
 ``USER STORY -As admin, I want to be able to delete a member when page is used``
 
@@ -295,28 +295,19 @@ For the admin, they can also delete Member from the admin page, even if they did
 
 Implementation:
 
-**Toasts**
-
-Custom toasts were implemented on the successful creation and editing of member. 
-
-
-``USER-STORY - As an admin, I want to be able to search a member by reference to save time searching``
-
-Implementation:
-
 **Searchbox**
 
 A search box was added to the admin member page that is only visible to admin users. This will allow the admin to easily access members page. 
 
-[Search Boxes](docs/readme_images/search.PNG)
+[Search Boxes]()
 
 ``USER-STORY - As a user I would like to delete a member when I no longer require it``
 
 Implementation:
 
-**Delete member Page or popup/ confirmation**
+**Delete member Page**
 
-A delete button was added to the manage member pages that will allow customers to delete their member page should they no longer require it.
+A delete button was added to the manage member pages that will allow Members to delete their member page should they no longer require it.
 
 The administration will also have the abaility to delete any member through the UI as well.
 
@@ -342,13 +333,6 @@ A 404 page has been implemented and will display if a user navigates to a broken
 
 The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need  of the browsers back button.
 
-``USER STORY - As a developer, I need to implement a 403 error page to alert users when accessing a page/view that they do not have permission to view``
-
-Implementation:
-
-**403 Page**
-
-A 403 error page has been implemented to provide feedback to the user when they try to access unauthorized content. Users will be directed to this page if they alter the URL's and attempt to edit, delete or access pages that are restricted. 
 
 This covers:
 
@@ -433,7 +417,6 @@ A favicon was added the website to enable users to easily locate the website in 
 
 **Differences to Design**
 
-On the Members page, the original wireframe was to display the members in a complete linear format but on larger screens this caused a lot of un-neccessary white space on smaller items like drinks and sides. A change was made to have the drinks and sides sit side-by-side on larger screens and stack as originally planned on mobiles.
 
 ### Database-Design
 
