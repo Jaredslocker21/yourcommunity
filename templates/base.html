@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><img src="/static/media/site_images/logo.jpeg" alt="My image" width="100" height="100"
+            <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'media/site_images/logo.jpeg' %}" alt="My image" width="100" height="100"
                 class="d-inline-block align-text-top">Your Community Blog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +63,7 @@
         </div>
     </nav>
     <div class="header-image">
-        <img class="img-fluid" src="/static/media/site_images/heroimageresize2.jpeg" alt="community image">
+        <img class="img-fluid" src="{% static 'media/site_images/heroimageresize.jpeg' %}" alt="community image">
     </div>
     <div class="container">
         <div class="row">
