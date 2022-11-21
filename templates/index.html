@@ -39,7 +39,7 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in member.featured_image.url %}
-                                <img class="card-img-top" src="/static/media/site_images/community.jpeg">
+                                <img class="card-img-top" src="/static/media/site_images/defaultimage .jpeg">
                                 {% else %}
                                 <a href="{% url 'member_detail' member.slug %}">
                                     <img class="card-img-top" src=" {{ member.featured_image.url }}">
