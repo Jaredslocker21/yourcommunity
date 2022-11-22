@@ -15,7 +15,7 @@ def about(request):
 
 def create_member(request):
     """
-    renders create a member page
+    renders form to create a member page
     """
     member_form = MemberForm(request.POST or None, request.FILES or None)
     context = {
@@ -29,6 +29,7 @@ def create_member(request):
             member_form.author = request.user
             member_form.status = 1
             member_form.save()
+            messages.success(request, "Your Member page is awaiting approval.")
             return redirect('home')
     else:
         member_form = MemberForm()
