@@ -29,7 +29,6 @@ def create_member(request):
             member_form.author = request.user
             member_form.status = 1
             member_form.save()
-            messages.success(request, "Your Member page is awaiting approval.")
             return redirect('home')
     else:
         member_form = MemberForm()
