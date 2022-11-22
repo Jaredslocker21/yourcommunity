@@ -23,7 +23,10 @@ body {
 }
 #member-image {
     width: 100%;
-    height: auto;
+    height: 40vw;
+    object-fit: cover;
+    object-position: left;
+    min-height: 200px;
 }
 
 .card-img-top {
