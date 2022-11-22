@@ -17,7 +17,6 @@ class MemberForm(forms.ModelForm):
             'user_email',
             'featured_image',
             'description',
-                        
         ]
         widgets = {
             'Member': SummernoteInplaceWidget(),

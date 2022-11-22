@@ -30,6 +30,7 @@ def create_member(request):
             member_form.author = request.user
             member_form.status = 1
             member_form.save()
+            messages.success(request, "Your Member page is waiting approval.")
             return redirect('home')
     else:
         member_form = MemberForm()
@@ -42,6 +43,7 @@ def delete_member(request, slug):
     """
     member = Member.objects.get(slug=slug)
     member.delete()
+    messages.success(request, "Your member page is deleted")
     return redirect('home')
 
 
@@ -126,7 +128,7 @@ def edit_member(request, slug):
             return redirect('home')
     else:
         member_form = MemberForm(instance=member)
-    return render(request, "edit_member.html", context)        
+    return render(request, "edit_member.html", context)
 
 
 class MemberLike(View):
