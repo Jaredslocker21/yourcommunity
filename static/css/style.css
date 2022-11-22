@@ -23,7 +23,7 @@ body {
 }
 #member-image {
     width: 100%;
-    height: 40vw;
+    height: 40vh;
     object-fit: cover;
     object-position: left;
     min-height: 200px;
