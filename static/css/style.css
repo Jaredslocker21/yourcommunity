@@ -26,7 +26,7 @@ body {
     height: 40vh;
     object-fit: cover;
     object-position: left;
-    min-height: 200px;
+    min-height: 400px;
 }
 
 .card-img-top {
