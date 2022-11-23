@@ -13,7 +13,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 def unique_slugify(instance, slug):
     """
     creates a unique slug.
-        """
+    """
     model = Member
     unique_slug = slug
     while model.objects.filter(slug=unique_slug).exists():
