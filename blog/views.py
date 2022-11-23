@@ -42,6 +42,11 @@ def delete_member(request, slug):
     Member delete view
     """
     member = Member.objects.get(slug=slug)
+
+    if member.author.username != request.user.username:
+        messages.error(request, "Unauthorized")
+        return redirect('home')
+
     member.delete()
     messages.success(request, "Your member page is deleted")
     return redirect('home')
@@ -114,6 +119,11 @@ def edit_member(request, slug):
     Member Edit view
     """
     member = get_object_or_404(Member, slug=slug)
+
+    if member.author.username != request.user.username:
+        messages.error(request, "Unauthorized")
+        return redirect('home')
+
     member_form = MemberForm(request.POST or None, instance=member)
     context = {
         "member_form": member_form,

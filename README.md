@@ -401,6 +401,10 @@ Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.c
 
 ### Security
 
+Security test were done.
+
+Hypothetical user Aila is signed in 
+
 
 ## The-Surface-Plane
 ### Design

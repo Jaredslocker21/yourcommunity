@@ -62,7 +62,7 @@ h3 {
     color: #f4f7fa;
 }
 
-.post-link:hover {
+.post-link > p:hover {
     color: #e8105c;
 }
 
