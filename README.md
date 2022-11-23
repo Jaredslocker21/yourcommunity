@@ -55,7 +55,11 @@ Initial Design comes parrarelel with tech and more aesthetic design continues un
 
 The Kanban board was created using github projects and can be located [here] and can be viewed to see more information on the project cards. 
 
-![Kanban image](docs/readme_images/kanban.PNG)
+![Kanban image](docs/readme_images/kanban.png)
+
+This Flow chart was created as a visual representation of user processes.
+
+![Flow Chart](docs/readme_images/flow-chart-res.png)
 
 #### Epics
 
@@ -105,17 +109,43 @@ As a developer, I need to create the footer with social media links and contact 
 
 As a developer, I need to create the navbar so that users can navigate the website from any device
 
-**EPIC 2 - Stand alone Pages**
+**EPIC 2 - Home Page**
 
-As a developer, I need to implement a 404 error page to alert users when they have accessed a page that doesn't exist
+As a Developer, I want to add thumbnails which will display the Member picture.
 
-As a developer, I need to implement a 500 error page to alert users when an internal server error occurs
+As a Developer, I want to add the Members Role
 
-As a developer, I need to implement a 403 error page to redirect unauthorised users to so that I can secure my views
+As a Developer, I want to make all Member Information a link to their personal page
+
+As a Developer, I want to add Like/Heart to view
+
+As a Site User, I want to see likes and when the member was created.
+
+As a Site User, I want to see a paginated and neat.
+
+Possible inclusion: As a Developer, I want to add Email Button which will open default email compose me page and add the email in 'To' Section
+
+**EPIC 3 - Page Functions and Site Pagnination**
+
+As a Member, I want to be able to delete my Member Page when it is no longer used.
+
+As an Admin user, I want to be able to delete a Member Page when it is no longer used.
+
+As a Developer, I need to implement a 404 error page to alert users when they have accessed a page that doesn't exist
 
 As a Site User, I would like a "About" page so that I can view information on this website
 
-**EPIC 3 - Authentication Epic**
+Aa a Site Admin, I can approve comments so that we can moderate appropriate content.
+
+As a Site Admin I can approve edit and delete members
+
+As a Site User, I can view a paginated list of members so that I can easily view community member.
+
+As a Site User I can **view that my page is awaiting approval through a message on the screen
+
+As a Site User I can view that my page is awaiting approval through a message on the screen
+
+**EPIC 4 - Authentication Epic**
 
 As a developer, I need to implement allauth so that users can sign up and have access to the websites features
 
@@ -127,39 +157,27 @@ As a Developer, I want to add a Sign In Page in the Header
 
 As a Developer, I want to add a Log Out Link in the Navigation Bar- only while logged in.
 
-**EPIC 4 - Member Page**
+As a site user I want my page and my interactions with website safe.
 
-As a Member, I want to be able to create a new Member Page to display myself as professionally skilled. It will have a comment section.
+**EPIC 5 - Member Page**
 
-As a Member, I want to be able to edit a my Member Page when updates are needed.
+As a Site User, I want to be able to create a new Member Page to display myself as professionally skilled. It will have a comment section.
 
-As a Member, I want to be able to delete my Member Page when it is no longer used.
+As a Site User, I want to be able to edit a my Member Page when updates are needed.
+
+As a Site Uer, I want to be able to delete my Member Page when it is no longer used.
 
 As an Admin user, I want to be able to delete a Member Page when it is no longer used.
 
-**EPIC 5 - Home Page**
+Aa a Site Developer, I need to** create an edit page that the user can upload a photo, contact information, description and a blurb** so that the user can have full CRUD and maintain the desire of the site owner.
 
-As a Developer, I want to add thumbnails which will display the Member picture.
-
-As a Developer, I want to add Member Blurb/Short Description
-
-As a Developer, I want to add Expertise/Profession
-
-As a Developer, I want to add Email ID/Contact Me
-
-As a Developer, I want to add Go to Member Button
-
-As a Developer, I want to add Like/Heart Button
-
-As a Site User, I would like to be able to view other Members and see what skill they have to offer
-
-Possible inclusion: As a Developer, I want to add Email Button which will open default email compose me page and add the email in 'To' Section
+Aa a Site User, I can upload a photo, contact information, description and a blurb so that I can manage my post.
 
 **EPIC 6 - Deployment Epic**
 
-As a developer, I need to set up whitenoise so that my static files are served in deployment
+As a developer, I need to deploy at the beginning to assure that my project deploys correctly
 
-As a developer, I need to deploy the project to heroku so that it is live for customers
+As a developer, I need to deploy the project to heroku so that it is live for my members and the correct settings are added to settings.py for example DEBUG=False etc.
 
 **EPIC 7 - Read Me File**
 
@@ -210,13 +228,15 @@ This will immediately make it evident to the user, what the purpose of the websi
 
 The navigation menu is displayed on all pages and drops down into a hamburger menu on smaller devices. This will allow users to view the site from any device and not take up too much space on mobile devices.
 
-![Navbar]()
+![Navbar](docs/readme_images/navbar.png)
 
-![Hero Image]()
+![Hero Image](docs/readme_images/hero.png)
 
-![Welcome Section]()
+![Welcome Section](docs/readme_images/welcome.png)
 
-![Find Us]()
+![Paginated Site](docs/readme_images/paginated-site.png)
+
+![social media links](docs/readme_images/social-media-links.png)
 
 
 ``USER STORY - As a developer, I need to create the footer with social media links and contact information``
@@ -227,7 +247,7 @@ Implementation:
 
 A footer has been added to the bottom of the site, this contains a Twitter and Facebook link so that users can follow the Your Community blog on social media'
 
-![Footer]()
+![Footer](docs/readme_images/footer.png)
 
 ``USER STORY - As an administrator, I want to be able to create a new member when we update the site, and or want to add a new member``
 
@@ -237,7 +257,7 @@ Implementation:
 
 Create member page was implemented to allow staff users to create new members via the UI without having to use the backend admin panel.
 
-![Create Member]()
+![Create Member](docs/readme_images/create-member-pages.png)
 
 ``USER STORY -As a user, I would like to be able to view member ``
 
@@ -247,9 +267,25 @@ Implementation:
 
 A member page has been implemented to allow users to see the current active members.
 
-![View Members](d)
+**Not Signed In 
 
-``USER STORY -As an admin I want to be able to edit a member when updates are needed``
+![Intro member page](docs/readme_images/introduction-message.png)
+
+Not Signed In Member Photo and Description
+
+![View Members](docs/readme_images/memberpage-notlogged-in.png)
+
+Not Signed in Comment section
+
+![Comment Section](docs/readme_images/comment-section-not-signed-in.png)
+
+**Signed In Member Photo and Description
+
+![Intro member page](docs/readme_images/Intro-member-signedin.png)
+
+Signed in Comment section
+
+![Comment Section](docs/readme_images/signedin-comment.png)
 
 Implementation:
 
@@ -257,9 +293,15 @@ Implementation:
 
 On the manage members page a button was added to allow staff members to edit a members page when changes need to be made.
 
-![Edit Member]()
+![Edit Member](docs/readme_images/)
 
 ``USER STORY -As an admin, I would like to receive feedback when a member need to be deleted ``
+
+**Delete Member**
+
+No Page was created. A message alert was created notifying the user that the page was deleted.
+
+![Delete Member](docs/readme_images/)
 
 Implementation:
 
@@ -267,57 +309,9 @@ Implementation:
 
 Generic Alert messages were used to inform members of their actions
 
-![Alert Messages]()
-
-``USER STORY -As admin, I want to be able to delete a member when page is used``
+![Alert Messages](docs/readme_images/)
 
 Implementation:
-
-**Delete Member Page**
-
-On the manage/admin members page, a delete button has been implemented that will take staff users to a confirmation page to allow them to delete a members. This will allow staff to delete members when they are no longer needed
-
-![Delete Member]()
-
-
-
-Implementation:
-
-**Create Member page**
-
-![]()
-
-
-Implementation:
-
-**Edit Member Page**
-
-On the manage member page an edit button is present that allows the user to direct to a form and update their member page when required. This will allow the user to easily manage their own member page.
-
-For the admin, they can also delete Member from the admin page, even if they did not create it. 
-
-
-``USER-STORY - As a user, I would like to receive feedback when I create a member or edit one so I know it was completed successfully``
-
-Implementation:
-
-**Searchbox**
-
-A search box was added to the admin member page that is only visible to admin users. This will allow the admin to easily access members page. 
-
-[Search Boxes]()
-
-``USER-STORY - As a user I would like to delete a member when I no longer require it``
-
-Implementation:
-
-**Delete member Page**
-
-A delete button was added to the manage member pages that will allow Members to delete their member page should they no longer require it.
-
-The administration will also have the abaility to delete any member through the UI as well.
-
-![Delete Member]()
 
 Favicon
     * A site wide favicon was implemented.
@@ -351,10 +345,6 @@ This covers:
 
 Implementation:
 
-**500 Page**
-
-A 500 error page has been displayed to alert users when an internal server error occurs. The message relays to users that the problem is on our end, not theirs.
-
 **Base Setup User Stories**
 
 The following stories were implemented in order to set up a base structure for all the HTML pages and the core installations and configurations needed to run the application. While these do not show as individual features, they were stories completed that were needed to implement all of the stories above.
@@ -371,54 +361,29 @@ A favicon was added the website to enable users to easily locate the website in 
 
 ### Features Left To Implement
 
-
 ## The-Skeleton-Plane
 
 ### Wireframes
 
-- Home page
+Wire frames were also created as a rough sketch to represent obejects within the site.
+
+This is the home page when user is not registered and not logged in.. 
+
+![wire Frame](docs/readme_images/home-first-time.png)
+
+This is a wire frame of a member logged in on the home page.
+
+![wire Frame](docs/readme_images/registered-login-home.png)
+
+This is a wire frame of the member page that is not signed in.
+
+![wire Frame](docs/readme_images/member-page-not-regist.png)
+
+This is a wire frame of the member page with the member logged in and viewing another members page with the ability to comment.
+
+![wire Frame](docs/readme_images/member-pages-logged-in.png)
 
 
-![Home Page]()
-
-
-- Signup page
-
-
-![Sign up Page]()
-
-- Log in
-
-![Login Page]()
-
-- Log Out
-
-![Logout Page](d)
-
-- Create Member 
-
-![Create Member]()
-
-- Edit Member 
-
-![Edit Member]()
-
-- View Member 
-
-![View Member]()
-
-
-- Manage Member
-
-![Manage Member]()
-
-- Delete Member 
-
-![Delete Member]()
-
-- 404 Error 
-
-![404 Error]()
 
 
 **Differences to Design**
