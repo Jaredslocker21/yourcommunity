@@ -77,6 +77,11 @@ h3 {
     color: lightgray;
 }
 
+.nav {
+    font-size: 1.5rem;
+
+}
+
 /* Button Styles */
 
 .btn-signup {
