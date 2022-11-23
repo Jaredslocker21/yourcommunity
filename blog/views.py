@@ -55,7 +55,8 @@ def delete_member(request, slug):
 class MemberList(generic.ListView):
     """ View code for Member Home page and site pagination """
     model = Member
-    queryset = Member.objects.filter(status=1).filter(approved=True).order_by('-created_on')
+    queryset = Member.objects.filter(
+        status=1).filter(approved=True).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 8
 
@@ -121,7 +122,7 @@ def edit_member(request, slug):
     member = get_object_or_404(Member, slug=slug)
 
     if member.author.username != request.user.username:
-        messages.error(request, "Unauthorized")
+        messages.error(request, "Unauthorized to edit")
         return redirect('home')
 
     member_form = MemberForm(request.POST or None, instance=member)
