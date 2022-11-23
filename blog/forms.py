@@ -5,7 +5,7 @@ from django import forms
 
 class MemberForm(forms.ModelForm):
     """
-    Member Input Form
+    Member Page Input Form
     """
     class Meta:
         """
