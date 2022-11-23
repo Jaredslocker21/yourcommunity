@@ -16,14 +16,15 @@
 
             {% else %}
             <h1 class="text-center padding mb-2 mt-3">Welcome Community Member!</h1>
-            <h5 class="text-center mb-3">Tell your Community About Yourself! <br>
-                Create your community member page, leave a comment or like a member.
-                <a class="link blue-text" href="{% url 'account_signup' %}"> Please Register.<br>
-                    </a> If you have an account, 
-                 <a class="link blue-text" href="{% url 'account_login' %}"> Log In</a>.
-                    Or want to read more about us. 
-                 <a class="link blue-text" href="{% url 'about' %}"> About</a>.
-                </h5>
+            <h5 class="text-center mb-3">
+                <a class="link blue-text" href="{% url 'account_signup' %}">Register</a>
+                To Create your community page, leave a comment or like a member.<br>
+                <a class="link blue-text" href="{% url 'account_login' %}"> Log In</a>
+                If you have an account.<br>
+                Or read more 
+                <a class="link blue-text" href="{% url 'about' %}"> About</a> us.
+                
+            </h5>
             <hr class="mt-2 mb-2 text-dark">
             {% endif %}
         </div>
@@ -43,11 +44,10 @@
                             <div class="image-container">
                                 {% if "placeholder" in member.featured_image.url %}
                                 <img class="card-img-top" src="{% static 'media/site_images/defaultimage.jpeg' %}"
-                                alt="default image">
+                                    alt="default image">
                                 {% else %}
                                 <a href="{% url 'member_detail' member.slug %}">
-                                    <img class="card-img-top" src=" {{ member.featured_image.url }}"
-                                    alt="member image">
+                                    <img class="card-img-top" src=" {{ member.featured_image.url }}" alt="member image">
                                 </a>
                                 {% endif %}
                             </div>
