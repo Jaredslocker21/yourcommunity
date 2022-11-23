@@ -23,8 +23,8 @@ body {
 }
 #member-image {
     width: 100%;
-    height: 40vh;
-    object-fit: contain;
+    height: 40vw;
+    object-fit: cover;
     object-position: center;
     min-height: 400px;
 }
