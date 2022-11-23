@@ -31,8 +31,8 @@ body {
 
 .card-img-top {
     width: 100%;
-    height: 20vw;
-    object-fit: contain;
+    height: 40vw;
+    object-fit: cover;
     object-position: left;
     min-height: 200px;
 }
