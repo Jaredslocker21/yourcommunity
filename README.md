@@ -1,7 +1,9 @@
 # Your Community Blog
 
 Your Community Blog consists of Member Profiles that have a Role in their Community. That wish to have an About Me Page describing what the do and how they engage with their community. 
-This is a great template for other organizations to use for their members. 
+This is a great template for other organizations to use for their members.
+
+![Mock Up](docs/readme_images/multi-screen-mockup.png)
 
 ## Table of Contents
 * [User Experience Design (UX)](#User-Experience-Design)
@@ -39,13 +41,17 @@ This is a great template for other organizations to use for their members.
 
 ### Site-Goals
 
-This webiste is?
+This webiste is a simple Community Blog that gives it's members the ability to share themselves with other community members. Community members are given the opportunity to upload a picture,
+and add a description of themselves like who they are and what they do. If so share conact information. Those who login can comment and like a member. 
+
 
 ### Agile Planning
 
 This project was developed using agile methodologies by delivering small features in incremental sprints. There were 3 sprints in total, spaced out evenly over three weeks.
 
-All projects were assigned to epics, prioritized under the labels. They were assigned to sprints and story points according to complexity & priority. It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
+All projects were assigned to epics and user stories, prioritized under the labels. User Stories were assigned to Epics and Epics were assigned to sprints. It was done this way to ensure that all core requirements were completed first to maintain completion. More aesthetic User Stories were added near last sprint (This is a personal decision as per how my mind and anxieties work)
+Initial Design comes parrarelel with tech and more aesthetic design continues until completion.
+
 
 The Kanban board was created using github projects and can be located [here] and can be viewed to see more information on the project cards. 
 
