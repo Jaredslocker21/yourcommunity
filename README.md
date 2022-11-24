@@ -401,11 +401,13 @@ Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.c
 
 ### Security
 
-* Security Methods were written into views.py - in the edit_member and delete_member functions. An if statements was used to check that the member, author and user are stictly equal
-to the member user and author editing or deleting that page. Error messages are presented when user does not match. 
+* Security Methods were written into views.py - In the edit_member and delete_member functions an if statement was used to check that the member, author and user are stictly equal
+to the member user and the author editing or deleting that page. Error messages are presented when user does not match. 
 * Within the create function the ability to create a page is not available if you are not logged in as it **does not** appear in the navigation bar and that is written within the base.html template code. 
 * edit_member.html and create_member.html have authorization if statements written in and messages are displayed.
-* Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully.  
+* Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully. 
+
+![Unauthorized to edit](docs/testing/test_images/unauthorized-to-edit.png) 
 
 
 ## The-Surface-Plane
@@ -456,7 +458,7 @@ Default Member image taken from Adobe Stock and a license was purchased for up t
 
 **Python Modules Used**
 
-* Django Class and function based views (Member List, Member Detail, Edit Member, Delete Member, MemberLike) - Used for the classes to create, read, update and delete
+* Django Class and def function based views (Member List, Member Detail, Edit Member, Delete Member, MemberLike) - Used for the classes to create, read, update and delete
 * Allauth - was used to integrate a set of Django applications addressing authentication, registration and account authentication.
 * Alert Messages - Login, Log Out to ensure that the user understands what actions have taken place.
 
