@@ -397,13 +397,15 @@ The Member model holds objects that are linked to the Member Models by a many to
 
 Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.com/) and shows the schemas for each of the models and how they are related.
 
-![Entity Relationship Diagram](docs/readme_images/erd.JPG)
+![Entity Relationship Diagram](docs/readme_images/erd-diagram.png)
 
 ### Security
 
-Security test were done.
-
-Hypothetical user Aila is signed in 
+* Security Methods were written into views.py - in the edit_member and delete_member functions. An if statements was used to check that the member, author and user are stictly equal
+to the member user and author editing or deleting that page. Error messages are presented when user does not match. 
+* Within the create function the ability to create a page is not available if you are not logged in as it **does not** appear in the navigation bar and that is written within the base.html template code. 
+* edit_member.html and create_member.html have authorization if statements written in and messages are displayed.
+* Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully.  
 
 
 ## The-Surface-Plane
@@ -411,15 +413,15 @@ Hypothetical user Aila is signed in
 
 ### Colour-Scheme
 
-The main color schemes for the website is a clean white background (#ffffff). Black font rgb(17, 17, 17), violet alert messages rgb (17, 17, 17), button text and hover affects to add a hint of color to the website.
+The main color schemes for the website is a clean white background (#ffffff). Black font rgb(17, 17, 17), violet alert messages rgb (17, 17, 17), button text and hover affects to add a hint of color to the website. The Logo, Hero Image and Favicon have a colorful red thread through through out the website and I am lucky to have found matching content that represents the idea of the blog. WE ARE ALL COLORFUL PEOPLE AND WE NEED bright imagery in todays world. 
 
 ### Typography
-
-
+I am using a default HTML Typography that is New Times Roman and it one of the safest Fonts to use. I really like New Times Roman it is simple clean and does not distract from the members
+info and writings.
 
 ### Imagery
 
-The Website logo was was taken from Adobe Stock and a license wsa purchased for up too 500,000 views.
+The Website logo was was taken from Adobe Stock and a license was purchased for up too 500,000 views.
 
 The hero image was taken from Adobe Stock and a license was purchased for up too 500,000 views.
 
@@ -432,7 +434,7 @@ Default Member image taken from Adobe Stock and a license was purchased for up t
 - CSS
   - The Website was styled using custom CSS in an external file.
 - JavaScript
-  - JavaScript was used to make the custom slider on the members page change and the bootstrap date picker.
+  - JavaScript was used to make the Site Pagination.
 - Python
   - Python was the main programming language used for the application using the Django Framework.
 - Visual Studio Code
@@ -444,13 +446,13 @@ Default Member image taken from Adobe Stock and a license was purchased for up t
 - Font Awesome
   - This was used for various icons throughout the site
 - Favicon.io
-  - favicon files were created at https://favicon.io/favicon-converter/
+  - favicon files were created at https://icons8.com/ and no license is required if I share this link with the whole world. 
 - balsamiq
   - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
 - Canva
-  - This was used to create the logo in header 
+  - The Diagram at the top of the page
 - TinyPNG
-  - This was used to compress the hero image for optimal load times
+  - This was used to compress the hero images for optimal load times
 
 **Python Modules Used**
 
@@ -488,7 +490,7 @@ Test cases and results can be found in the [TESTING.md](TESTING.md) file. This w
 
 ### Version Control
 
-The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘Gars-Steakhouse’.
+The site was created using the Github!
 
 The following git commands were used throughout development to push code to the remote repo:
 
