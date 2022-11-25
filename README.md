@@ -29,8 +29,7 @@ This is a great template for other organizations to use for their members.
 * [Testing](#Testing)
 * [Deployment](#Deployment)
     * [Version Control](#Version-Control)
-    * [Heroku Deployment](#Heroku-Deployment)
-      
+    * [Heroku Deployment](#Heroku-Deployment) 
 * [Credits](#Credits)
   * [Content](#Content)
   * [Acknowledgements](#Acknowledgements)
@@ -469,7 +468,7 @@ The hero image was taken from Adobe Stock and a license was purchased for up too
 
 Default Member image taken from Adobe Stock and a license was purchased for up too 500,000 views.
 
-## Technolgies
+## Technologies
 
 - HTML
   - The structure of the Website was developed using HTML as the main language.
