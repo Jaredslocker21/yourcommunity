@@ -47,3 +47,22 @@ Due to the django templating language code used in the HTML files, these could n
 * signup was tested
 
 ![HTML Validator](docs/test_images/signinhtml.png)
+
+* Log In was tested
+
+![HTML Validator](docs/test_images/login.png)
+
+* Register
+
+![HTML Validator](docs/test_images/.png)
+
+* About 
+
+![HTML Validator](docs/test_images/.png)
+
+
+## CSS Validator
+
+* CSS Validator
+
+![CSS Validator](docs/test_images/cssval.png)
