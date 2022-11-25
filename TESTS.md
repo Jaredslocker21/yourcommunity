@@ -23,7 +23,7 @@ All pythone pages were run through the official [Pep8](https://pep8ci.herokuapp.
 
 * urls.py
 
-![CI Py linter](docs/test_images/urlspy.png)
+![CI Py linter](docs/test_images/urlspypy.png)
 
 * models.py 
 
@@ -39,6 +39,11 @@ All pages were run through the [w3 HTML Validator](https://validator.w3.org/). I
 
 Due to the django templating language code used in the HTML files, these could not be copy and pasted into the validator and due to the secured views, pages with login required or a secured view cannot be validated by direct URI. To test the validation on the files, open the page to validate, right click and view page source. Paste the raw html code into the validator as this will be only the HTML rendered code.
 
+* base.html and index.html were done at the same time as index.html rests in base.html
+
+![HTML Validator](docs/test_images/base-index.png)
 
 
-![HTML Validator](docs/test_images/)
+* signup was tested
+
+![HTML Validator](docs/test_images/signinhtml.png)
