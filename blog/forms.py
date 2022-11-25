@@ -1,3 +1,4 @@
+""" Forms """
 from .models import Member, Comment
 from django_summernote.widgets import SummernoteInplaceWidget
 from django import forms

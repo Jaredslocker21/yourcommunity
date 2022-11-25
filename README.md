@@ -228,18 +228,24 @@ This will immediately make it evident to the user, what the purpose of the websi
 
 The navigation menu is displayed on all pages and drops down into a hamburger menu on smaller devices. This will allow users to view the site from any device and not take up too much space on mobile devices.
 
+* Navigation Bar
 ![Navbar](docs/readme_images/navbar.png)
+
+* Hero Image
 
 ![Hero Image](docs/readme_images/hero.png)
 
+* Welcome Section
+
 ![Welcome Section](docs/readme_images/welcome.png)
+
+* PAginated Site
 
 ![Paginated Site](docs/readme_images/paginated-site.png)
 
+* Social Media Links
+
 ![social media links](docs/readme_images/social-media-links.png)
-
-
-``USER STORY - As a developer, I need to create the footer with social media links and contact information``
 
 Implementation:
 
@@ -249,7 +255,13 @@ A footer has been added to the bottom of the site, this contains a Twitter and F
 
 ![Footer](docs/readme_images/footer.png)
 
-``USER STORY - As an administrator, I want to be able to create a new member when we update the site, and or want to add a new member``
+`` User Story - As a user I would like to Sign- In``
+
+* Sign in Page 
+
+![Sign In Page](docs/readme_images/sign-in-page.png)
+
+``USER STORY - As an Site User, I want to be able to create my own member page``
 
 Implementation:
 
@@ -259,7 +271,7 @@ Create member page was implemented to allow staff users to create new members vi
 
 ![Create Member](docs/readme_images/create-member-pages.png)
 
-``USER STORY -As a user, I would like to be able to view member ``
+``USER STORY -As a user, I would like to be able to view a member or my member page ``
 
 Implementation:
 
@@ -267,41 +279,46 @@ Implementation:
 
 A member page has been implemented to allow users to see the current active members.
 
-**Not Signed In 
+* Not Signed In 
 
 ![Intro member page](docs/readme_images/introduction-message.png)
 
-Not Signed In Member Photo and Description
+* Not Signed In Member Photo and Description
 
 ![View Members](docs/readme_images/memberpage-notlogged-in.png)
 
-Not Signed in Comment section
+* Not Signed in Comment section
 
 ![Comment Section](docs/readme_images/comment-section-not-signed-in.png)
 
-**Signed In Member Photo and Description
+* Signed In Member Photo and Description
 
 ![Intro member page](docs/readme_images/Intro-member-signedin.png)
 
-Signed in Comment section
+* Signed in adds Comment section 
 
 ![Comment Section](docs/readme_images/signedin-comment.png)
 
-Implementation:
+
+* Signed Out Promt
+
+![sign Out Prompt](docs/readme_images/signout-prompt.png)
+
+``Site User - as a site user I would like to edit and or delete my page``
 
 **Edit Members Page**
 
-On the manage members page a button was added to allow staff members to edit a members page when changes need to be made.
+* Edit Button and Delete Button
 
-![Edit Member](docs/readme_images/)
+![Edit Member Button](docs/readme_images/edit-button.png)
 
-``USER STORY -As an admin, I would like to receive feedback when a member need to be deleted ``
+* Edit Page
+
+![Edit Member](docs/readme_images/edit-page.png)
 
 **Delete Member**
 
 No Page was created. A message alert was created notifying the user that the page was deleted.
-
-![Delete Member](docs/readme_images/)
 
 Implementation:
 
@@ -309,7 +326,23 @@ Implementation:
 
 Generic Alert messages were used to inform members of their actions
 
-![Alert Messages](docs/readme_images/)
+* Signed In Message
+
+![Alert Messages](docs/readme_images/signed-in.png)
+
+* Signed-out Message
+
+![Alert Messages](docs/readme_images/signed-out.png)
+
+* Deleted Message
+
+![Alert Messages](docs/readme_images/deleted-message.png)
+
+* Unauthorized to Edit
+
+![Alert Messages](docs/testing/test_images/unauthorized-to-edit.png) 
+
+
 
 Implementation:
 
@@ -317,7 +350,7 @@ Favicon
     * A site wide favicon was implemented.
     * This provides an image in the tabs header to allow the user to easily identify the website if they have multiple tabs open.
 
-![Favicon]()
+![Favicon](static/media/site_images/favicon.png)
 
 **Error Pages**
 
@@ -325,7 +358,7 @@ Favicon
 
 Implementation:
 
-**404 Page**
+**404 Message**
 
 As a developer, I need to implement a 404 error page to redirect users to
 
@@ -402,12 +435,25 @@ Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.c
 ### Security
 
 * Security Methods were written into views.py - In the edit_member and delete_member functions an if statement was used to check that the member, author and user are stictly equal
-to the member user and the author editing or deleting that page. Error messages are presented when user does not match. 
-* Within the create function the ability to create a page is not available if you are not logged in as it **does not** appear in the navigation bar and that is written within the base.html template code. 
-* edit_member.html and create_member.html have authorization if statements written in and messages are displayed.
-* Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully. 
+to the member user and the author editing or deleting that page. Error messages are presented when user does not match.
+* Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully.
+
 
 ![Unauthorized to edit](docs/testing/test_images/unauthorized-to-edit.png) 
+
+
+* Within the create function the ability to create a page is not available if you are not logged in as it **does not** appear in the navigation bar and that is written within the base.html template code. 
+
+![Nav Bar Not signed in](docs/readme_images/navbar.png)
+
+* edit_member.html and create_member.html have authorization if statements written in and messages are displayed.  
+
+![You are not logegd In](docs/readme_images/not-loggedin.png)
+
+
+
+
+
 
 
 ## The-Surface-Plane
