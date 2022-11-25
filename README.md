@@ -525,7 +525,7 @@ Default Member image taken from Adobe Stock and a license was purchased for up t
 
 ## Testing
 
-Test cases and results can be found in the [TESTING.md](TESTING.md) file. This was moved due to the size of the file.
+Test cases and results can be found in the [TESTS.md](TESTS.md) file. This was moved due to the size of the file.
 
 ## Deployment
 
