@@ -5,6 +5,8 @@
 * CSS 
 
 
+
+
 ### Py Linter
 
 All pythone pages were run through the official [Pep8](https://pep8ci.herokuapp.com/) validator to ensure all code was pep8 compliant. Some errors were shown due to blank spacing and lines too long, 1 line instead of 2 expected. All of these errors were resolved and code passed through validators.
@@ -66,3 +68,8 @@ Due to the django templating language code used in the HTML files, these could n
 * CSS Validator
 
 ![CSS Validator](docs/test_images/cssval.png)
+
+
+## Lighthouse Performance
+
+![Light House Performance  ](docs/test_images/lighthouse-report.png)

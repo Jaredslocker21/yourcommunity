@@ -340,7 +340,7 @@ Generic Alert messages were used to inform members of their actions
 
 * Unauthorized to Edit
 
-![Alert Messages](docs/testing/test_images/unauthorized-to-edit.png) 
+![Alert Messages](docs/test_images/unauthorized-to-edit.png) 
 
 
 
@@ -354,7 +354,11 @@ Favicon
 
 **Error Pages**
 
-``USER STORY - As a developer, I need to implement a 404 error page to alert users when they have accessed a page that doesn't exist``
+``USER STORY - As a developer, I need to implement a 404 error message``
+
+* You are not logged in error page while member is not loged in. 
+
+![You are not logegd In](docs/readme_images/not-loggedin.png)
 
 Implementation:
 
@@ -362,17 +366,12 @@ Implementation:
 
 As a developer, I need to implement a 404 error page to redirect users to
 
-A 404 page has been implemented and will display if a user navigates to a broken link.
-
-The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need  of the browsers back button.
-
-
+The 404 message will allow the user to easily understand what is occuring.
 This covers:
 
-* Create Member - Only authorized to staff
-* Edit Member - Only authorized to staff
-* Delete Member - Only authorized to staff
-* Edit Member - Full CRUD TO MEMBER
+* Member Detail 
+* Delete Member
+* Edit Member 
 
 ``USER STORY - As a developer, I need to implement a 500 error page to alert users when an internal server error occurs``
 
