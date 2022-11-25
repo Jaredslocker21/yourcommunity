@@ -416,11 +416,6 @@ This is a wire frame of the member page with the member logged in and viewing an
 ![wire Frame](docs/readme_images/member-pages-logged-in.png)
 
 
-
-
-**Differences to Design**
-
-
 ### Database-Design
 
 The database was designed to allow CRUD functionality to be available to registered users, when signed in. The Member model is at the heart of the application as it is connected the the main members page, linked by primary/foreign key relationships.
@@ -431,7 +426,7 @@ Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.c
 
 ![Entity Relationship Diagram](docs/readme_images/erd-diagram.png)
 
-### Security
+### Security Tests 
 
 * Security Methods were written into views.py - In the edit_member and delete_member functions an if statement was used to check that the member, author and user are stictly equal
 to the member user and the author editing or deleting that page. Error messages are presented when user does not match.
