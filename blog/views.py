@@ -45,7 +45,7 @@ def delete_member(request, slug):
     member = Member.objects.get(slug=slug)
 
     if member.author.username != request.user.username:
-        messages.error(request, "Unauthorized")
+        messages.error(request, "Unauthorized to delete")
         return redirect('home')
 
     member.delete()
@@ -53,6 +53,7 @@ def delete_member(request, slug):
     return redirect('home')
 
 
+# Class used from "I think therefore I blog" walkthrough.
 class MemberList(generic.ListView):
     """ View code for Member Home page and site pagination """
     model = Member
@@ -62,6 +63,7 @@ class MemberList(generic.ListView):
     paginate_by = 8
 
 
+# Class used from "I think therefore I blog" walkthrough.
 class MemberDetail(View):
     """ View code for Member Page """
     def get(self, request, slug, *args, **kwargs):
@@ -116,6 +118,7 @@ class MemberDetail(View):
         )
 
 
+# This function was wirtten by me with help from a freind a my mentor
 def edit_member(request, slug):
     """
     Member Edit view
@@ -143,6 +146,7 @@ def edit_member(request, slug):
     return render(request, "edit_member.html", context)
 
 
+# Class used from "I think therefore I blog" walkthrough.
 class MemberLike(View):
     """
     Likes on a Member
