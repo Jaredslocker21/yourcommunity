@@ -362,6 +362,7 @@ Favicon
 **Error Pages**
 
 ``USER STORY - As a developer, I need to implement a 404 error message``
+`` USER STORY - As a User I cannot CREATE, EDIT, or DELETE other peoples content ``
 
 * You are not logged in error page while member is not loged in. 
 
