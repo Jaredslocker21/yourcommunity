@@ -3,6 +3,8 @@
 Your Community Blog consists of Member Profiles that have a Role in their Community. That wish to have an About Me Page describing what the do and how they engage with their community. 
 This is a great template for other organizations to use for their members.
 
+The live link can be found here: [Live Site](https://yourcommunityblog.herokuapp.com/)
+
 ![Mock Up](docs/readme_images/multi-screen-mockup.png)
 
 ## Table of Contents
@@ -260,6 +262,12 @@ A footer has been added to the bottom of the site, this contains a Twitter and F
 
 ![Sign In Page](docs/readme_images/sign-in-page.png)
 
+`` User Story I would like to be able to register so I can sign in and create my own page``
+
+* Register Page
+
+![Sign In Page](docs/readme_images/register.png)
+
 ``USER STORY - As an Site User, I want to be able to create my own member page``
 
 Implementation:
@@ -363,10 +371,10 @@ Implementation:
 
 **404 Message**
 
-As a developer, I need to implement a 404 error page to redirect users to
+As a developer, I need to implement a 404 error messages to redirect users to
 
 The 404 message will allow the user to easily understand what is occuring.
-This covers:
+This covers: The occurances happen in the pages below.
 
 * Member Detail 
 * Delete Member
@@ -567,7 +575,7 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 
 The app should now be deployed.
 
-The live link can be found here: [Live Site](https:yourcommunityblog.herokuapp.com)
+The live link can be found here: [Live Site](https://yourcommunityblog.herokuapp.com/)
 
 ## Credits 
 

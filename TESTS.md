@@ -1,10 +1,34 @@
 ## This is a Document to display tests such as 
-* Py Linter 
-* Lighthouse 
-* HTML
-* CSS 
+* Navigation Links
+* Footer Link 
+* Py Linter Validator
+* Lighthouse Page Analayzer 
+* HTML Validator
+* CSS Validator
+
+## Navigation Links
+All of these links were tested by myself, friends, close and far. 
+
+ * Home - index.html and base.html
+ * About - about.html
+ * Register - django template signup.html
+ * Login - djangop template login.html
+ * Logout - django template logout.html
+
+ ## Footer Links 
+ All footer Links were tested and open to another tab with their respective URL 
+  * FACEBOOK
+  * TWITTER 
+  * INSTAGRAM
+  * YOUTUBE
+  * LINKED IN 
+  * GITHUB
 
 
+
+## Security Tests are located in the [README.md](README.md) File under the Security Tests Section.
+
+## Testing messages coinside with the displays in the [README.md](README.md) Alert Section.
 
 
 ### Py Linter
@@ -35,6 +59,10 @@ All pythone pages were run through the official [Pep8](https://pep8ci.herokuapp.
 
 ![CI Py linter](docs/test_images/viewspy.png)
 
+## Lighthouse Performance
+
+![Light House Performance  ](docs/test_images/lighthouse-report.png)
+
 ## HTML Validator 
 
 All pages were run through the [w3 HTML Validator](https://validator.w3.org/). Initially there were some errors due to stray script tags, misuse of headings within spans and some unclosed elements. All of these issues were corrected and all pages passed validation.
@@ -56,7 +84,7 @@ Due to the django templating language code used in the HTML files, these could n
 
 * Register
 
-![HTML Validator](docs/test_images/.png)
+![HTML Validator](docs/test_images/registerhtml.png)
 
 * About 
 
@@ -70,6 +98,4 @@ Due to the django templating language code used in the HTML files, these could n
 ![CSS Validator](docs/test_images/cssval.png)
 
 
-## Lighthouse Performance
 
-![Light House Performance  ](docs/test_images/lighthouse-report.png)
