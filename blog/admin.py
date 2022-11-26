@@ -4,6 +4,7 @@ from .models import Member, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
 
+# Model used from "I think therefore I blog" walkthrough.
 @admin.register(Member)
 class MemberAdmin(SummernoteModelAdmin):
     """
@@ -21,6 +22,7 @@ class MemberAdmin(SummernoteModelAdmin):
         queryset.update(approved=True)
 
 
+# Model used from "I think therefore I blog" walkthrough.
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     """
