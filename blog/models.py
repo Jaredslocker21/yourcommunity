@@ -10,6 +10,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # Create your models here.
 
 
+# This function was created by a friend and shared with me.
 def unique_slugify(instance, slug):
     """
     creates a unique slug.
@@ -21,6 +22,7 @@ def unique_slugify(instance, slug):
     return unique_slug
 
 
+# Model used from "I think therefore I blog" walkthrough and customized.
 class Member(models.Model):
     """ Member Model """
     role = models.CharField(max_length=200, unique=True)
@@ -89,6 +91,7 @@ class Member(models.Model):
             return False
 
 
+# Model used from "I think therefore I blog" walkthrough and customized.
 class Comment(models.Model):
     """Comment Model"""
     post = models.ForeignKey(
