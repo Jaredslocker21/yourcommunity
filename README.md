@@ -240,9 +240,13 @@ The navigation menu is displayed on all pages and drops down into a hamburger me
 
 ![Welcome Section](docs/readme_images/welcome.png)
 
-* PAginated Site
+* Paginated Site
 
 ![Paginated Site](docs/readme_images/paginated-site.png)
+
+* About Page
+
+![About Page](docs/readme_images/about-page.png)
 
 * Social Media Links
 
@@ -350,18 +354,10 @@ Generic Alert messages were used to inform members of their actions
 ![Alert Messages](docs/test_images/unauthorized-to-edit.png) 
 
 
-
 Implementation:
-
-Favicon
-    * A site wide favicon was implemented.
-    * This provides an image in the tabs header to allow the user to easily identify the website if they have multiple tabs open.
-
-![Favicon](static/media/site_images/favicon.png)
 
 **Error Pages**
 
-``USER STORY - As a developer, I need to implement a 404 error message``
 `` USER STORY - As a User I cannot CREATE, EDIT, or DELETE other peoples content ``
 
 * You are not logged in error page while member is not loged in. 
@@ -372,22 +368,23 @@ Implementation:
 
 **404 Message**
 
-As a developer, I need to implement a 404 error messages to redirect users to
+``As a developer, I need to implement a 404 error messages to redirect users to``
 
 The 404 message will allow the user to easily understand what is occuring.
-This covers: The occurances happen in the pages below.
+This covers: The occurances happen in the pages below. It is implemented into the code with a
+using a basic django message. 
 
 * Member Detail 
 * Delete Member
 * Edit Member 
-
-``USER STORY - As a developer, I need to implement a 500 error page to alert users when an internal server error occurs``
 
 Implementation:
 
 **Base Setup User Stories**
 
 The following stories were implemented in order to set up a base structure for all the HTML pages and the core installations and configurations needed to run the application. While these do not show as individual features, they were stories completed that were needed to implement all of the stories above.
+
+As I am a student I will most likely revisit some of these ideas as making migrations or adjusting to design and learning curve. 
 
 ``As a developer, I need to create the base.html page and structure so that other pages can reuse the layout``
 
@@ -397,7 +394,10 @@ The following stories were implemented in order to set up a base structure for a
 
 **Favicon**
 
-A favicon was added the website to enable users to easily locate the website in the browser when multiple tabs are open.
+  * A site wide favicon was implemented.
+  * This provides an image in the tabs header to allow the user to easily identify the website if they have multiple tabs open.
+
+![Favicon](static/media/site_images/favicon.png)
 
 ### Features Left To Implement
 
@@ -461,11 +461,11 @@ to the member user and the author editing or deleting that page. Error messages 
 
 ### Colour-Scheme
 
-The main color schemes for the website is a clean white background (#ffffff). Black font rgb(17, 17, 17), violet alert messages rgb (17, 17, 17), button text and hover affects to add a hint of color to the website. The Logo, Hero Image and Favicon have a colorful red thread through through out the website and I am lucky to have found matching content that represents the idea of the blog. WE ARE ALL COLORFUL PEOPLE AND WE NEED bright imagery in todays world. 
+The main color schemes for the website is a clean white background (#ffffff). Black font rgb(17, 17, 17), violet alert messages #cc2bab, and buttons, text and hover affects to add a hint red of color to the website, blue social icons are another shade of color. 
+The Logo, Hero Image and Favicon have a colorful red thread through through out the website and I am lucky to have found matching content that represents the idea of the blog. Link that send you outside of the site are Blue. WE ARE ALL COLORFUL PEOPLE AND WE NEED bright imagery in todays world. 
 
 ### Typography
-I am using a default HTML Typography that is New Times Roman and it one of the safest Fonts to use. I really like New Times Roman it is simple clean and does not distract from the members
-info and writings.
+I am using HTML's a default Typography that is **New Times Roman** site wide It is one of the safest Fonts to use. I really like New Times Roman it is simple clean and does not distract from the members photos and writings.
 
 ### Imagery
 
@@ -577,5 +577,17 @@ The app should now be deployed.
 The live link can be found here: [Live Site](https://yourcommunityblog.herokuapp.com/)
 
 ## Credits 
+My Mentor Akshat Garg and Daisy Mc Girr have really supported me technically through this project.
+The Default Image, Hero Image and Logo are  Adobe Stock Images licenses were purchased through my monthly subscription.
+Tutor Support on a few occassions. Thank You! 
+The slack community has also helped to keep me cool and engaged.
+Lauren-Nicole helped me with some design.
+Rebecca Rayner helped me design the CRUD Function and slugify function for my members.
+Al-Amin Sanusi helped with moral as an ear to talk to and work out problems and issues
+“I think therefore I blog” walkthrough: Provided initial steps for setting up & deploying the site.  
+"I think therefore I blog" + "Hello Django" + Slack + Stackoverflow + other pupils helped in the creation of the totality.
+
+
+
 
 

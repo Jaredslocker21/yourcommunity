@@ -10,7 +10,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 # Create your models here.
 
 
-# This function was created by a friend and shared with me.
+# This function was not created by me.
 def unique_slugify(instance, slug):
     """
     creates a unique slug.
