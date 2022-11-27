@@ -84,18 +84,18 @@ h3 {
 /* Button Styles */
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #cc2bab;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #cc2bab;
 }
 
 .link {
-    color: #23BBBB;
+    color: #cc2bab;
     text-decoration: none;
 }
 
@@ -121,6 +121,6 @@ h3 {
 #msg {
     position: absolute;
     z-index: 999;
-    background: #cb2aaa;
+    background: #cc2bab;
     left: 0px;
 }
