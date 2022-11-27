@@ -25,13 +25,13 @@ def unique_slugify(instance, slug):
 # Model used from "I think therefore I blog" walkthrough and customized.
 class Member(models.Model):
     """ Member Model """
-    role = models.CharField(max_length=200, unique=True)
+    role = models.CharField(max_length=200, unique=False)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="member_posts"
     )
     featured_image = CloudinaryField('image', default='placeholder')
-    user_email = models.EmailField(max_length=70, blank=True, unique=True)
+    user_email = models.EmailField(max_length=70, blank=True, unique=False)
     updated_on = models.DateTimeField(auto_now=True)
     description = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
