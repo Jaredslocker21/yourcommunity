@@ -427,6 +427,9 @@ This is a wire frame of the member page with the member logged in and viewing an
 ![wire Frame](docs/readme_images/member-pages-logged-in.png)
 ![wire Frame](docs/phone_images/comment-iphone.png)
 
+About Page
+![wire Frame](docs/readme_images/about-page.png)
+
 
 ### Database-Design
 
@@ -577,15 +580,15 @@ The app should now be deployed.
 The live link can be found here: [Live Site](https://yourcommunityblog.herokuapp.com/)
 
 ## Credits 
-My Mentor Akshat Garg and Daisy Mc Girr have really supported me technically through this project.
-The Default Image, Hero Image and Logo are  Adobe Stock Images licenses were purchased through my monthly subscription.
-Tutor Support on a few occassions. Thank You! 
-The slack community has also helped to keep me cool and engaged.
-Lauren-Nicole helped me with some design.
-Rebecca Rayner helped me design the CRUD Function and slugify function for my members.
-Al-Amin Sanusi helped with moral as an ear to talk to and work out problems and issues
-“I think therefore I blog” walkthrough: Provided initial steps for setting up & deploying the site.  
-"I think therefore I blog" + "Hello Django" + Slack + Stackoverflow + other pupils helped in the creation of the totality.
+- My Mentor Akshat Garg and Daisy Mc Girr have really supported me technically through this project.
+- The Default Image, Hero Image and Logo are  Adobe Stock Images licenses were purchased through my monthly subscription up too 500k views.
+- Tutor Support on a few occassions. Thank You! 
+- The slack community has also helped to keep me cool and engaged.
+- Lauren-Nicole helped me with some design.
+- Rebecca Rayner helped me design the CRUD Function and slugify function for my members.
+- Al-Amin Sanusi helped with moral as an ear to talk to and work out problems and issues
+- “I think therefore I blog” walkthrough: Provided initial steps for setting up & deploying the site.  
+- "I think therefore I blog" + "Hello Django" + Slack + Stackoverflow + other pupils helped in the creation of the totality.
 
 
 
