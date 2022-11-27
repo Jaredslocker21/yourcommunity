@@ -410,18 +410,22 @@ Wire frames were also created as a rough sketch to represent obejects within the
 This is the home page when user is not registered and not logged in.. 
 
 ![wire Frame](docs/readme_images/home-first-time.png)
+![wire Frame](docs/phone_images/homepage-iphone.png)
 
 This is a wire frame of a member logged in on the home page.
 
 ![wire Frame](docs/readme_images/registered-login-home.png)
+![wire Frame](docs/phone_images/memberpage-iphone.png)
 
 This is a wire frame of the member page that is not signed in.
 
 ![wire Frame](docs/readme_images/member-page-not-regist.png)
+![wire Frame](docs/phone_images/memberpage-iphone.png)
 
 This is a wire frame of the member page with the member logged in and viewing another members page with the ability to comment.
 
 ![wire Frame](docs/readme_images/member-pages-logged-in.png)
+![wire Frame](docs/phone_images/comment-iphone.png)
 
 
 ### Database-Design
@@ -441,7 +445,7 @@ to the member user and the author editing or deleting that page. Error messages 
 * Different scenarios were carried out. Copying and pasting member **A's** edit url while member **B** was logged in. The function worked and displayed the message successfully.
 
 
-![Unauthorized to edit](docs/testing/test_images/unauthorized-to-edit.png) 
+![Unauthorized to edit](docs/test_images/unauthorized-to-edit.png) 
 
 
 * Within the create function the ability to create a page is not available if you are not logged in as it **does not** appear in the navigation bar and that is written within the base.html template code. 
@@ -451,12 +455,6 @@ to the member user and the author editing or deleting that page. Error messages 
 * edit_member.html and create_member.html have authorization if statements written in and messages are displayed.  
 
 ![You are not logegd In](docs/readme_images/not-loggedin.png)
-
-
-
-
-
-
 
 ## The-Surface-Plane
 ### Design
