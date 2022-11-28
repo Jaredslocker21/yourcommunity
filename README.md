@@ -429,6 +429,7 @@ This is a wire frame of the member page with the member logged in and viewing an
 
 About Page
 ![wire Frame](docs/readme_images/about-page.png)
+![wire Frame](docs/readme_images/aboutpage-iphone.png)
 
 
 ### Database-Design
