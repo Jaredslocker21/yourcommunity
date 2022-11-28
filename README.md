@@ -339,19 +339,27 @@ Generic Alert messages were used to inform members of their actions
 
 * Signed In Message
 
+![Alert Messages](docs/phone_images/signin-phone.PNG)
 ![Alert Messages](docs/readme_images/signed-in.png)
+
 
 * Signed-out Message
 
+![Alert Messages](docs/phone_images/signout-iphone.PNG)
 ![Alert Messages](docs/readme_images/signed-out.png)
+
 
 * Deleted Message
 
+![Alert Messages](docs/phone_images/signout-iphone.PNG)
 ![Alert Messages](docs/readme_images/deleted-message.png)
+
 
 * Unauthorized to Edit
 
-![Alert Messages](docs/test_images/unauthorized-to-edit.png) 
+![Alert Messages](docs/phone_images/unauth-iphone.PNG) 
+![Alert Messages](docs/test_images/unauthorized-to-edit.png)
+
 
 
 Implementation:
@@ -428,7 +436,8 @@ This is a wire frame of the member page with the member logged in and viewing an
 ![wire Frame](docs/phone_images/comment-iphone.png)
 
 About Page
-![wire Frame](docs/readme_images/about-page.png)
+
+![wire Frame](docs/readme_images/about-wireframe.png)
 ![wire Frame](docs/readme_images/aboutpage-iphone.png)
 
 
