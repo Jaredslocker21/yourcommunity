@@ -88,7 +88,7 @@ Due to the django templating language code used in the HTML files, these could n
 
 * About 
 
-![HTML Validator](docs/test_images/.png)
+![HTML Validator](docs/test_images/about-html.png)
 
 
 ## CSS Validator
