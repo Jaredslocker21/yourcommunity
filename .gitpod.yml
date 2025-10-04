@@ -1,16 +1,17 @@
-image:
-  file: .gitpod.dockerfile
+image: gitpod/workspace-python:latest
+
 tasks:
-  - init: . ${GITPOD_REPO_ROOT}/.vscode/init_tasks.sh
-    command: /home/gitpod/.pg_ctl/bin/pg_start > /dev/null
-  - command: . ${GITPOD_REPO_ROOT}/.vscode/uptime.sh &
-vscode:
-  extensions:
-    - ms-python.python
-    - formulahendry.auto-close-tag
-    - eventyret.bootstrap-4-cdn-snippet
-    - hookyqr.beautify
-    - matt-rudge.auto-open-preview-panel
-    - ms-toolsai.jupyter
-    - ms-toolsai.jupyter-keymap
-    - ms-toolsai.jupyter-renderers
+  - name: Serve index.html
+    init: |
+      python3 -m venv .venv
+      source .venv/bin/activate
+      pip install -U pip
+      [ -f index.html ] || echo '<h1>Hi from Gitpod</h1>' > index.html
+    command: |
+      # Long-running so the workspace stays up
+      python3 -m http.server 8000
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+    visibility: public
